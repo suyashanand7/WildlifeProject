@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--@meta-info-->
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!--@stylesheet-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"-->
+    <link rel="stylesheet" href="assets/styles/global.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body id="app">
+
+    <div class="sidenav left" id="sidenav1">
+        <div class="sidenav-closer">
+            <button onclick="document.getElementById('sidenav1').style.display='none'"><i class="material-icons">close</i></button>
+        </div>
+        <div class="sidenav-options">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="adoption.html">Adoption</a></li>
+                <li><a href="strength.html">Strength</a></li>
+                <li><a href="endangerd.html">Endangerd</a></li>
+                <li><a href="visit-us.html">Visit Us</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="donation.html" class="active">Donate</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="hwrap">
+            <nav class="navbar flex margin-auto">
+
+                <div class="navbar-left flex">
+                    <div class="navbar-item-logo">
+                        <a href="index.html" class="navbar-logo-img">
+                            <img src="assets/images/logo/logo.jpg" alt="" srcset="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="navbar-right">
+                    <div class="navbar-toggle">
+                        <a href="javascript:void(0)" onclick="document.querySelector('#sidenav1').style.display='block'">
+                            <i class="material-icons">menu</i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-right-options">
+                        <a href="index.html" class="drop-inline-links">Home</a>
+                        <div class="nav-dropdown">
+                            <button class="nav-dropdown-btn">
+                                Gallery
+                            </button>
+                            <div class="nav-dropdown-content">
+                                <ul class="nav-dropdown-menu">
+                                    <li><a href="gallery.html#animals">Animals</a></li>
+                                    <li><a href="gallery.html#birds">Birds</a></li>
+                                    <li><a href="gallery.html">All</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="donation.html" class="drop-inline-links">Donate</a>
+                        <a href="adoption.html" class="drop-inline-links">Adopte</a>
+                        <div class="nav-dropdown">
+                            <button class="nav-dropdown-btn">
+                                More
+                            </button>
+                            <div class="nav-dropdown-content">
+                                <ul class="nav-dropdown-menu">
+                                    <li><a href="strength.html">Strength</a></li>
+                                    <li><a href="endangerd.html">Endangerd</a></li>
+                                    <li><a href="visit-us.html">Visit Us</a></li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="tab-container">
+        <div class="tab-container-heading">
+            <h1 style="font-size:50px;font-family: 'Spicy Rice', cursive;">CONTRIBUTE TO OUR <span style="color:#27d67c">NOBLE
+                    CAUSE</span></h1>
+        </div>
+        <div class="donate-reason-cards">
+            <div class="dr-cards flex flex-around">
+                <div class="dr-card">
+                    <span class="dr-card-summary bg-gd1">
+                        <h3>DONATE ANIMALS</h3>
+                        <p>Donate. The work of International Animal Rescue is funded entirely by public donations. Your
+                            support is vital if we are to make a lasting difference to animals' lives.</p>
+                        <button class="donate-link" data-tabid="DoonationformOne">Donate</button>
+                    </span>
+                </div>
+                <div class="dr-card">
+                    <span class="dr-card-summary bg-gd1">
+                        <h3>DONATE MONEY</h3>
+                        <p>We value the trust our donors place in us. Our partner nonprofits are thoroughly checked to
+                            ensure credibility of operations. We also ensure that your money</p>
+
+                        <button class="donate-link" data-tabid="DoonationformTwo">Donate</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-container type2 " id="Donatetabs">
+        <form id="DoonationformOne" style="display:none">
+            <h1 style="color:#27d67c;">DONATE PET</h1>
+            <P style="padding: 0 0 30px 0">Our team will contact you shortly after submission.</P>
+            <select id="country" name="country">
+                <option>Select category</option>
+                <option value="australia">animals</option>
+                <option value="canada">Birds</option>
+                <option value="usa">all</option>
+            </select>
+            <select id="country" name="country">
+                <option>Select sub category</option>
+                <option value="australia">Lion</option>
+                <option value="canada">Parrot</option>
+                <option value="usa">all</option>
+            </select>
+
+            <input type="text" id="fname" name="firstname" placeholder="Enter Nmber of pet you want..">
+
+
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <input type="email" id="email" name="email" placeholder="Your email address">
+
+            <input type="text" id="fname" name="firstname" placeholder="Your address line1">
+
+            <input type="text" id="lname" name="lastname" placeholder="Your address line2.">
+
+            <textarea id="subject" name="subject" placeholder="Your Short description aout this adoption.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+        <form id="DoonationformTwo" style="display:none">
+            <h1 style="color:#27d67c;">DONATE MONEY</h1>
+            <P style="padding: 0 0 30px 0">Our team will contact you shortly after submission.</P>
+            <select id="country" name="country">
+                <option>Select category</option>
+                <option value="australia">animals</option>
+                <option value="canada">Birds</option>
+                <option value="usa">all</option>
+            </select>
+            <select id="country" name="country">
+                <option>Select sub category</option>
+                <option value="australia">Lion</option>
+                <option value="canada">Parrot</option>
+                <option value="usa">all</option>
+            </select>
+
+            <input type="text" id="fname" name="firstname" placeholder="Enter Nmber of pet you want..">
+
+
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <input type="email" id="email" name="email" placeholder="Your email address">
+
+            <input type="text" id="fname" name="firstname" placeholder="Your address line1">
+
+            <input type="text" id="lname" name="lastname" placeholder="Your address line2.">
+
+            <textarea id="subject" name="subject" placeholder="Your Short description aout this adoption.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+
+
+    <section class="index-volentiers" style="background: #07d46a">
+        <div class="ivolentiers-content">
+            <div class="ivolentiers-content-heading" style="color: #fff">
+                <h1 style="color: #fff">CAUSES OF DONATION</h1>
+                <p>Sed diam metus facilisis eu. Sit amet pulvinar dictum quam odio lorem</p>
+            </div>
+
+            <div class="volentier-cards">
+                <div class="cards">
+
+                    <div class="card type2">
+                        <span class="card-header" style="background-image: url(assets/images/photos/giraffe.jpg);">
+
+                        </span>
+                        <span class="card-summary">
+                            <h3>CHARITY FOR SUMMER</h3>
+                            <p>A summary will also be present. Usually two to three brief sentences about the content
+                                on
+                                the detail page.</p>
+                        </span>
+                    </div>
+
+                    <div class="card type2">
+                        <span class="card-header" style="background-image: url(assets/images/photos/k1.jpg);">
+                        </span>
+                        <span class="card-summary">
+                            <h3>CHARITY FOR ANIMALS</h3>
+                            <p>A summary will also be present. Usually two to three brief sentences about the content
+                                on
+                                the detail page.</p>
+                        </span>
+                    </div>
+
+                    <div class="card type2">
+                        <span class="card-header" style="background-image: url(assets/images/v4.jpg);">
+                        </span>
+                        <span class="card-summary">
+                            <h3>CHARITY FOR WROKERS</h3>
+                            <p>A summary will also be present. Usually two to three brief sentences about the content
+                                on
+                                the detail page.</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-container">
+        <div class="contact-heading">
+            <h1 style="color:#27d67c">Contact US</h1>
+        </div>
+        <form>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <input type="email" id="email" name="email" placeholder="Your email address">
+
+            <select id="country" name="country">
+                <option>Select your country</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="australia">India</option>
+                <option value="canada">Pakistan</option>
+                <option value="usa">bangladesh</option>
+                <option value="australia">Uk</option>
+            </select>
+
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+
+
+    <footer class="footer">
+        <div class="footerh">
+            <div class="logo">
+                <a href="">
+                    <img src="assets/images/logo/logo.jpg" alt="">
+                </a>
+            </div>
+            <center>
+                <div>Copyright © 2018 wildlife.com.</div>
+            </center>
+        </div>
+        <div class="footerm">
+            <ul class="social">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="adoption.html">Adoption</a></li>
+                <li><a href="strength.html">Strength</a></li>
+                <li><a href="endangerd.html">Endangerd</a></li>
+                <li><a href="visit-us.html">Visit Us</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="donation.html" class="active">Donate</a></li>
+            </ul>
+        </div>
+        <div class="footerm">
+            <ul>
+                <li>
+                    <a title="twitter" href="https://twitter.com/wildlife" target="_blank">
+                        <img src="assets/images/icons/twitter.png">
+                    </a>
+                </li>
+                <li>
+                    <a title="facebook" href="https://facebook.com/wildlife" target="_blank">
+                        <img src="assets/images/icons/facebook.png">
+                    </a>
+                </li>
+                <li>
+                    <a title="google plus" href="https://plus.google.com/wildlife" target="_blank">
+                        <img src="assets/images/icons/google-plus.png">
+                    </a>
+                </li>
+                <li>
+                    <a title="instagram" href="https://instagram.com/wildlife" target="_blank">
+                        <img src="assets/images/icons/instagram.png">
+                    </a>
+                </li>
+                <li>
+                    <a title="wildlife" href="about-us.html" target="_blank">
+                        <img src="assets/images/logo/logo_sm.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="assets/scripts/vendor/jquery-3.3.1.min.js"><\/script>');
+        window.angular || document.write('<script src="assets/scripts/vendor/angular-1.7.5.min.js"><\/script>')
+    </script>
+    <script src="assets/scripts/main.js"></script>
+    <script>
+        var viewBtn = document.querySelectorAll(".donate-link");
+        viewBtn.forEach(el => {
+            el.addEventListener("click", () => {
+                let id = el.getAttribute("data-tabid");
+                document.getElementById("Donatetabs").querySelectorAll('form').forEach(elin => {
+                    elin.style.display = 'none';
+                });
+                document.getElementById(id).style.display = "block";
+                window.scrollTo(0, 500);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
